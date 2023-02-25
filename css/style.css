@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  width: 100%;
+  height: 65px;
+  background-color: #e5b69c;
+  margin: 0 auto;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 81px;
+}
+.text {
+  width: 30%;
+  height: 435px;
+  background-color: #d4ca69;
+}
+.pic {
+  width: 70%;
+  height: 435px;
+  background-color: #f4a2a2;
+}
+
+/*    второй блок                                */
+
+.block-box {
+  width: 100%;
+  margin-top: 135px;
+  display: flex;
+  align-items: center;
+}
+.box-content {
+  width: calc(100% / 4 - (15px * 3 / 4));
+  margin: 0 auto;
+}
+.big-box {
+  height: 259px;
+  background-color: #69c8d4;
+}
+.smoll-box {
+  height: 85px;
+  background-color: #89afe8;
+  margin-top: 21px;
+}
+
+/*    третий блок                               */
+
+.block-content {
+  width: 100%;
+  margin: 0 auto;
+}
+.content {
+  margin-top: 133px;
+  display: flex;
+  align-items: center;
+}
+.sidebar-1 {
+  width: 25%;
+  height: 637px;
+  background-color: #bb9be4;
+}
+.sidebar-2 {
+  width: 25%;
+  height: 637px;
+  background-color: #bb9be4;
+}
+.content-text {
+  width: 50%;
+  height: 637px;
+  background-color: #6eb468;
+}
+
+footer {
+  width: 100%;
+  height: 278px;
+  background-color: #f2a4dc;
+  margin-top: 138px;
+}
+
+@media screen and (max-width: 850px) {
+  .main-content {
+    margin-top: 76px;
+  }
+
+  .text {
+    width: 50%;
+  }
+  .pic {
+    width: 50%;
+  }
+
+  /*     2      */
+
+  .block-box {
+    flex-wrap: wrap;
+    margin-top: 140px;
+  }
+  .box-content {
+    width: calc(100% / 2 - (15px * 2 / 2));
+  }
+  .smoll-box {
+    margin-bottom: 34px;
+  }
+
+  /* 3          */
+
+  .content {
+    margin-top: 64px;
+  }
+  .sidebar-1 {
+    width: 20%;
+    margin-right: 15px;
+  }
+
+  .sidebar-2 {
+    width: 0;
+  }
+
+  .content-text {
+    width: 80%;
+  }
+
+  footer {
+    margin-top: 124px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .main-content {
+    margin-top: 33px;
+  }
+
+  .text {
+    width: 100%;
+  }
+  .pic {
+    width: 0;
+  }
+
+  /*     2      */
+
+  .block-box {
+    margin-top: 77px;
+  }
+  .box-content {
+    width: 100%;
+  }
+  .smoll-box {
+    margin-bottom: 34px;
+  }
+
+  /* 3          */
+
+  .content {
+    margin-top: 81px;
+  }
+  .sidebar-1 {
+    width: 0;
+    margin-right: 0;
+  }
+
+  .sidebar-2 {
+    width: 0;
+  }
+
+  .content-text {
+    width: 100%;
+  }
+
+  footer {
+    margin-top: 83px;
+  }
+}
